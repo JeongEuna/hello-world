@@ -1,0 +1,22 @@
+def addNumber(x, y):
+    return x + y
+
+
+def sortList(x):
+    a = sorted(x)
+    return a
+
+def reverseSortList(x):
+    x.sort(reverse=True)
+
+def multiplyList(x, y):
+    for i in range(len(x)):
+        x[i] = x[i] * y
+
+def multiplyListEnhanced(x, y):
+    if (type(x) == list):
+        for i in range(len(x)):
+            x[i] = x[i] * y
+        return True
+    else:
+        return False
